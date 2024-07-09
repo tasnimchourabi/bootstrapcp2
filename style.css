@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    height: 100vh;
+    background: url("https://wallpaperswide.com/download/best_destinations_in_the_world-wallpaper-1280x768.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+    z-index: 10;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+}
+
+.navleft img {
+    width: 10em;
+    height: 10em;
+    margin-left: 1em;
+    margin-top: -1.5em;
+}
+
+
+
+.navright ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 5em;
+    margin-top: -1.8em;
+}
+.navright ul :hover{
+    cursor: pointer;
+    color: rgb(21, 201, 210);
+}
+.navright li {
+    margin: 0 1em;
+}
+
+.navright a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.navright{
+    font-size: 25px;
+ 
+  
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navleft img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navleft h1 {
+        font-size: 1.5em;
+    }
+
+    .navright ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navright li {
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navleft h1 {
+        font-size: 1.2em;
+    }
+
+    .navright a {
+        font-size: 0.9em;
+    }
+}
+.sec {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.search {
+    background-color: white;
+    z-index: -1;
+    width: 25em;
+    height: 4.5em;
+    border-radius: 5%;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont {
+    height: 3em;
+    margin-top:0.5em;
+    border-radius: 2%;
+    border: 2px solid rgb(84, 193, 197);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-input {
+    width: 15em;
+}
+
+.search-button {
+    background-color: rgb(0, 170, 182);
+    width: 10em;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub-title {
+   
+    color: rgb(105, 106, 105);
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sec {
+        margin-top: 4em;
+    }
+
+    .search {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .cont {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    .main-title {
+        font-size: 2em;
+    }
+
+    .sub-title {
+        margin-top: -1em;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .sub-title {
+        font-size: 1.2em;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+}
+.titre{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size:2em ;
+    color: rgb(0, 170, 182);;
+}
+.btn{
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardz{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    width: 70%;
+
+}
+#cd{
+    width: 40vh;
+    height: 350px;
+
+}
+#cd:hover{
+    transform: translateY(-5px);
+}
+.planning{
+   display: flex; 
+   flex-wrap: wrap;
+   margin-top: 7em;
+   margin-left: 9em;
+
+}
+.para ,.parag{
+    max-width: 60vh;
+    margin-left: 10em;
+    margin-top: 8em;
+
+}
+.contain{
+    display: flex;
+    justify-content: center;
+   margin: 2em;
+}
+#al{
+    margin-left: 1.5em;
+    margin: 1.5em;
+    height: 450px;
+   
+   
+}
+#cardd{
+    width: 130vh;
+    justify-content: center;
+    margin-left: 39vh;
+    
+}
+.sect{
+    display: flex;
+    justify-content: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section p, .footer-section a {
+    color: #ccc;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: #fff;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #ccc;
+}
